@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dimana Cippy?</title>
+  <link rel="icon" type="image/x-icon" href="src/cippy.png" />
+  <link href="styles/output.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="flex flex-col items-center justify-center bg-emerald-100/40 p-4">
+  <div
+    class="max-w-md w-full bg-emerald-50 backdrop-blur-md rounded-3xl border border-emerald-200/60 shadow-2xl p-6 flex flex-col gap-5">
+    <div class="text-center relative">
+      <div class="inline-block bg-emerald-700 rounded-2xl p-3 border border-emerald-600/40 mb-3 shadow-inner">
+        <img src="src/cippy.png" alt="cippy" class="w-16 h-16" id="cippy-image" />
+      </div>
+      <h1 class="text-2xl font-bold font-display text-emerald-900 tracking-wide">
+        Dimana Cippy?
+      </h1>
+      <p class="text-emerald-700/80 text-sm mt-1">
+        Hi, aku Cippy! Bisakah kamu menebak di lubang mana aku bersembunyi?
+      </p>
+    </div>
+
+    <div
+      class="flex items-center justify-between bg-emerald-700 border border-emerald-600/30 rounded-2xl p-3.5 text-sm">
+      <div class="flex flex-col gap-0.5">
+        <span class="text-emerald-100 text-xs font-semibold uppercase tracking-wider">Kesempatan</span>
+        <span class="text-emerald-50 font-bold" id="attempt-badge">0 / 8 Percobaan</span>
+      </div>
+      <div class="flex flex-col items-end gap-0.5">
+        <span class="text-emerald-100 text-xs font-semibold uppercase tracking-wider">Skor</span>
+        <div class="flex gap-0.5 text-base" id="stars-container">
+          <span class="text-amber-400">★</span>
+          <span class="text-amber-400">★</span>
+          <span class="text-amber-400">★</span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between items-center px-1 mb-2">
+        <h2 class="text-sm font-semibold text-emerald-800/80">
+          Pilih salah satu lubang:
+        </h2>
+        <span class="text-xs text-amber-600 font-medium">Lubang 1 - 9</span>
+      </div>
+
+      <div class="flex justify-center mx-auto" id="buttons"></div>
+    </div>
+
+    <div id="result"
+      class="bg-emerald-800 rounded-2xl p-4 min-h-[84px] flex flex-col items-center justify-center text-center text-sm text-white border border-emerald-900/20 leading-relaxed font-medium">
+      Pilih salah satu lubang di atas untuk mulai mencari!
+    </div>
+
+    <button id="resetBtn"
+      class="w-full py-3.5 px-6 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold rounded-2xl shadow-lg shadow-amber-500/10 transition-all duration-200 font-display text-center tracking-wide"
+      style="display: none" onclick="initGame()">
+      Main Lagi
+    </button>
+  </div>
+
+  <footer class="mt-6 text-xs text-slate-600 flex items-center gap-1 select-none">
+    <span>Dibuat dengan JavaScript & Tailwind</span>
+  </footer>
+
+  <script src="mencariTikus.js"></script>
+</body>
+
+</html>
