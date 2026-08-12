@@ -87,7 +87,6 @@ function kirimTebakan(tebak) {
 
     if (jumlahTebakan <= 3) {
       detailHtml = `<span class="text-emerald-300 font-semibold">Anjay! Kamu hanya butuh ${jumlahTebakan} tebakan!</span>`;
-      alert(`Anjay! Kamu hanya butuh ${jumlahTebakan} tebakan!`);
     } else if (jumlahTebakan <= 5) {
       detailHtml = `<span class="text-amber-300 font-medium">Bagus sekali! Kamu menemukannya dalam ${jumlahTebakan} tebakan.</span>`;
     } else {
